@@ -1,0 +1,2 @@
+obj/Debug/netcoreapp3.1/Shopper-profileGrpc.cs \
+obj/Debug/netcoreapp3.1/ShopperProfile.cs: Protos/shopper-profile.proto

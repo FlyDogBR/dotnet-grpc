@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{71F38EC4-6134-4CEC-96B0-82F507712F77}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AddressBookServer/Services/AddressBookService.cs">
+    <Files>
+      <File FileName="AddressBookServer/Services/AddressBookService.cs" Line="86" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AddressBookServer" expanded="True">
+            <Node name="AddressBookServer" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Protos" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="AddressBookService.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.AddressBookServer PreferredExecutionTarget="/Applications/Safari.app" />
+</Properties>

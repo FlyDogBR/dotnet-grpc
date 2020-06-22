@@ -1,0 +1,58 @@
+﻿syntax = "proto3";
+
+import "google/protobuf/duration.proto";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/wrappers.proto";
+
+
+option csharp_namespace = "AddressBookServer";
+
+package address;
+
+service Address {
+  rpc Get (AddressBookRequest) returns (AddressBookResponse);
+}
+
+message AddressBookRequest {
+  string id = 1;
+}
+
+message AddressBookResponse {
+  repeated Person people = 1;
+}
+
+message Person {
+  string name = 1;
+  int32 id = 2;
+  string email = 3;
+
+  enum PhoneType {
+    MOBILE = 0;
+    HOME = 1;
+    WORK = 2;
+  }
+
+  message PhoneNumber {
+    string number = 1;
+    PhoneType type = 2;
+  }
+
+  repeated PhoneNumber phones = 4;
+
+  // Protobuf scalar data types
+  // https://docs.microsoft.com/pt-br/dotnet/architecture/grpc-for-wcf-developers/protobuf-data-types
+
+
+  google.protobuf.Timestamp last_updated = 5;
+  google.protobuf.Duration duration = 6;
+
+  // Nullable types
+  // https://github.com/protocolbuffers/protobuf/blob/master/src/google/protobuf/wrappers.proto
+
+  google.protobuf.DoubleValue doubleTestNullType = 7;
+  google.protobuf.FloatValue floaTestNullType = 8;
+  google.protobuf.Int32Value int32TestNullType = 9;
+  google.protobuf.Int64Value int64TestNullType = 10;
+  google.protobuf.StringValue stringTestNullType = 11;
+
+}
